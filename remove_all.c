@@ -24,7 +24,7 @@ int remove_wrapper(
 int remove_all(const char * const p) {
     #define NOPENFD 256
     const int result = nftw(p, remove_wrapper, NOPENFD, FTW_DEPTH | FTW_PHYS);
-    if (result) { return 1; }
+    if (result) { return -1; }
 
     return 0;
     #undef NOPENFD
