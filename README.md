@@ -40,3 +40,5 @@ which are still being used.
 ## NOTES
 The C++ `remove_all` returns the number of deleted files,
 we instead copy the return value schema of POSIX (and `remove(3)`).
+
+Currently only works under POSIX.
