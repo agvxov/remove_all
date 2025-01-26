@@ -1,6 +1,6 @@
-// @BAKE gcc -o $*.out $@ filesystem_remove.c -ggdb
-#include "filesystem_remove.h"
+// @BAKE gcc -o $*.out $@ remove_all.c -ggdb
+#include "remove_all.h"
 
 signed main(void) {
-    return !filesystem_remove("testdir/");
+    return remove_all("testdir/");
 }

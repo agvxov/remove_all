@@ -1,4 +1,4 @@
-#include "filesystem_remove.h"
+#include "remove_all.h"
 
 #define _XOPEN_SOURCE 500
 #include <stdio.h>
@@ -21,11 +21,11 @@ int remove_wrapper(
     return 0;
 }
 
-bool filesystem_remove(const char * const p) {
+int remove_all(const char * const p) {
     #define NOPENFD 256
     const int result = nftw(p, remove_wrapper, NOPENFD, FTW_DEPTH | FTW_PHYS);
-    if (result) { return false; }
+    if (result) { return 1; }
 
-    return true;
+    return 0;
     #undef NOPENFD
 }
