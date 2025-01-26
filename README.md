@@ -1,5 +1,5 @@
 # remove\_all
-> C replication of `std::filesystem::remove_all` of C++17.
+> C imitation of `std::filesystem::remove_all()` from C++17.
 
 ## SYNOPSIS
 
