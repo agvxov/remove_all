@@ -29,3 +29,5 @@ int remove_all(const char * const p) {
     return 0;
     #undef NOPENFD
 }
+
+// The contents of this file are Public Domain.

@@ -6,4 +6,6 @@
  */
 int remove_all(const char * const p);
 
+// The contents of this file are Public Domain.
+
 #endif
